@@ -1,0 +1,144 @@
+Build a high-end, dark-themed professional football media website called TopTier.
+
+The website’s purpose is to sell elite football highlight videos and player branding services for players, agents, academies, and scouts.
+
+Brand & Tone
+
+Premium, elite, modern, minimal
+
+Serious football industry tone (agents, scouts, clubs)
+
+No flashy or playful elements
+
+Emphasis on professionalism, credibility, and performance
+
+Slogan: “Showcase Greatness”
+
+Design Style
+
+Dark background with subtle contrast (dark gray / near-black)
+
+Blue primary accent color (used sparingly for CTAs and highlights)
+
+Clean typography, strong hierarchy
+
+Spacious layout with clear sections
+
+Broadcast / elite sports media feel
+
+Navigation (Top Menu)
+
+Logo on the left
+
+Links: Home, Services, Portfolio, About, Process, Pricing
+
+Sticky, clean navigation
+
+Hero Section
+
+Centered logo
+
+Small label above headline: “Elite Player Media”
+
+Main headline (large, bold):
+“Showcase Your Game at the Highest Level”
+
+Supporting paragraph explaining professional football highlight videos, branding, and market value
+
+Two CTAs:
+
+Primary: “Request a Video”
+
+Secondary: “View Samples”
+
+Target Audience Section
+
+Title: “Built for Players and Agents Who Aim Higher”
+
+Three cards:
+
+Players – “Build your professional image”
+
+Agents – “Market your clients with precision”
+
+Academies & Scouts – “Talent presentation done right”
+
+Differentiation Section
+
+Title:
+“More Than Highlights.
+Strategic Player Branding.”
+
+Four feature points:
+
+Attribute-Focused Editing
+
+Position-Specific Storytelling
+
+Broadcast-Style Visuals
+
+Built for Results (contracts, trials, negotiations)
+
+Process Section (How It Works)
+
+Four numbered steps:
+
+Submit Footage
+
+Player Analysis & Strength Mapping
+
+Professional Editing & Branding
+
+Delivery Optimized for Agents & Clubs
+
+Portfolio / Samples Section
+
+Title: “Selected Player Showcases”
+
+Three placeholder video cards:
+
+Midfielder (Pace | Vision | Finishing)
+
+Striker (Movement | Finishing | Positioning)
+
+Defender (Tackling | Reading | Distribution)
+
+Value / Philosophy Section
+
+Title:
+“Football Is Performance —
+But Representation Is Power”
+
+Explain that clubs don’t watch full matches, first impressions matter, and highlight videos act as professional introductions.
+
+Final CTA Section
+
+Headline: “Turn Performances Into Opportunities”
+
+CTA: “Request a Professional Video”
+
+Secondary CTA: “Talk to Us” (email contact)
+
+Footer
+
+Logo + short brand description
+
+Navigation links
+
+Contact email
+
+Social links (Facebook, Instagram, TikTok)
+
+Copyright line: “© 2025 TopTier. All rights reserved.”
+
+Technical Notes
+
+SEO-friendly structure
+
+Clean HTML5 semantic sections
+
+Modular, reusable components
+
+Mobile-responsive
+
+No clutter, no unnecessary animations
