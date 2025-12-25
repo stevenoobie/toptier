@@ -34,17 +34,17 @@ export default function Home() {
       {/* HERO SECTION */}
       <section className="relative min-h-[90vh] flex items-center justify-center pt-20 px-4 overflow-hidden">
         {/* Abstract Background Elements */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-600/10 rounded-full blur-[120px] -z-10" />
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-600/5 rounded-full blur-[100px] -z-10" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] -z-10" />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-400/5 rounded-full blur-[100px] -z-10" />
         
         {/* Background Image Overlay */}
-        <div className="absolute inset-0 z-[-5] opacity-30">
+        <div className="absolute inset-0 z-[-5] opacity-20">
           <img 
             src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1920&q=80" 
             alt="Stadium Atmosphere" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover grayscale"
           />
-          <div className="absolute inset-0 bg-background/60" />
+          <div className="absolute inset-0 bg-background/90" />
         </div>
 
         <div className="max-w-4xl mx-auto text-center space-y-8 relative z-10">
@@ -56,7 +56,7 @@ export default function Home() {
             <span className="inline-block px-4 py-1.5 rounded-full bg-blue-500/10 text-blue-400 text-sm font-semibold tracking-wide uppercase border border-blue-500/20 mb-6">
               Elite Player Media
             </span>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-white mb-6 leading-[1.1]">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-foreground mb-6 leading-[1.1]">
               Showcase Your Game at the <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">Highest Level</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
@@ -66,7 +66,7 @@ export default function Home() {
               <Button 
                 size="lg" 
                 onClick={() => setContactOpen(true)}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl shadow-xl shadow-blue-900/20 hover:shadow-blue-900/40 transition-all hover:-translate-y-0.5"
+                className="px-8 py-6 text-lg rounded-xl shadow-xl shadow-primary/20 hover:shadow-primary/40 transition-all hover:-translate-y-0.5"
               >
                 Request a Video
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -74,7 +74,7 @@ export default function Home() {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="bg-transparent border-white/10 text-white hover:bg-white/5 px-8 py-6 text-lg rounded-xl"
+                className="bg-background/50 backdrop-blur-sm border-border text-foreground hover:bg-accent px-8 py-6 text-lg rounded-xl"
                 onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 View Samples

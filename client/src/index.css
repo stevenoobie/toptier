@@ -5,7 +5,34 @@
 @tailwind utilities;
 
 :root {
-  /* HSL Format */
+  /* Light Theme Palette based on provided image */
+  --background: 210 40% 96.1%;    /* Very Light Blue #f1f5f9 */
+  --foreground: 222.2 84% 4.9%;
+  
+  --primary: 221.2 83.2% 53.3%;   /* Bright Blue #3b82f6 */
+  --primary-foreground: 210 40% 98%;
+  
+  --secondary: 210 40% 90%;       /* Soft Blue-Gray #e2e8f0 */
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  
+  --muted: 210 40% 90%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  
+  --accent: 210 40% 90%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 221.2 83.2% 53.3%;
+  
+  --radius: 0.5rem;
+}
+
+.dark {
+  /* Dark Theme Palette (previous version or slightly adjusted) */
   --background: 240 10% 4%;       /* Very dark gray/black #0a0a0b */
   --foreground: 0 0% 98%;         /* Off-white */
   
@@ -27,8 +54,6 @@
   --border: 240 4% 16%;
   --input: 240 4% 16%;
   --ring: 217 91% 60%;
-  
-  --radius: 0.5rem;
 }
 
 @layer base {
@@ -40,7 +65,7 @@
     font-family: 'Inter', sans-serif;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-sans font-bold tracking-tight text-white;
+    @apply font-sans font-bold tracking-tight text-foreground;
   }
 }
 

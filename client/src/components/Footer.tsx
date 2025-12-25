@@ -1,42 +1,57 @@
 import { Instagram, Facebook, Mail } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
+import logoPng from "@assets/logo.png";
 
 export function Footer() {
   return (
-    <footer id="footer" className="bg-secondary/50 border-t border-white/5 py-12 px-4">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div className="col-span-1 md:col-span-2">
-          <div className="flex items-center gap-2 mb-4">
-            <div className="h-6 w-6 bg-blue-600 rounded flex items-center justify-center">
-              <span className="text-white font-bold text-xs">T</span>
-            </div>
-            <span className="text-lg font-bold text-white">TopTier</span>
+    <footer id="footer" className="bg-secondary/30 border-t border-border py-16 px-4">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="col-span-1 md:col-span-2 space-y-6">
+          <div className="flex items-center gap-3">
+            <img 
+              src={logoPng} 
+              alt="TopTier Logo" 
+              className="h-10 w-auto object-contain"
+            />
+            <span className="text-xl font-bold text-foreground">TopTier</span>
           </div>
-          <p className="text-muted-foreground max-w-sm">
+          <p className="text-muted-foreground max-w-sm leading-relaxed">
             Professional football media services dedicated to showcasing elite talent to the world's biggest clubs and agencies.
           </p>
         </div>
 
         <div>
-          <h4 className="text-white font-semibold mb-4">Follow Us</h4>
-          <div className="flex gap-4 mb-4">
-            <a href="https://www.instagram.com/toptiermedia01/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-white transition-colors">
+          <h4 className="text-foreground font-bold mb-6">Explore</h4>
+          <ul className="space-y-3 text-sm text-muted-foreground">
+            <li><a href="/" className="hover:text-primary transition-colors">Home</a></li>
+            <li><a href="/services" className="hover:text-primary transition-colors">Services</a></li>
+            <li><a href="/process" className="hover:text-primary transition-colors">Process</a></li>
+            <li><a href="/pricing" className="hover:text-primary transition-colors">Pricing</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="text-foreground font-bold mb-6">Follow Us</h4>
+          <div className="flex gap-4 mb-6">
+            <a href="https://www.instagram.com/toptiermedia01/" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all">
               <Instagram className="h-5 w-5" />
             </a>
-            <a href="https://www.facebook.com/TopTierMedia1/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-white transition-colors">
+            <a href="https://www.facebook.com/TopTierMedia1/" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all">
               <Facebook className="h-5 w-5" />
             </a>
-            <a href="https://www.tiktok.com/@toptiermedia0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-white transition-colors">
+            <a href="https://www.tiktok.com/@toptiermedia0" target="_blank" rel="noopener noreferrer" className="h-10 w-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all">
               <SiTiktok className="h-5 w-5" />
             </a>
           </div>
-          <a href="mailto:mediatoptier1@gmail.com" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-white transition-colors">
-            <Mail className="h-4 w-4" />
+          <a href="mailto:mediatoptier1@gmail.com" className="group flex items-center gap-3 text-sm text-muted-foreground hover:text-primary transition-colors">
+            <div className="h-8 w-8 rounded-full bg-secondary flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+              <Mail className="h-4 w-4" />
+            </div>
             mediatoptier1@gmail.com
           </a>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/5 text-center text-xs text-muted-foreground">
+      <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-border text-center text-xs text-muted-foreground">
         © 2025 TopTier Media. All rights reserved.
       </div>
     </footer>
