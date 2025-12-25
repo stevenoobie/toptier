@@ -16,7 +16,7 @@
   --secondary-foreground: 224 71.4% 4.1%;
   
   --muted: 210 40% 90%;
-  --muted-foreground: 215.4 16.3% 46.9%;
+  --muted-foreground: 224 71.4% 4.1%; /* Dark Navy Blue for muted text in light mode */
   
   --accent: 210 40% 90%;
   --accent-foreground: 224 71.4% 4.1%;
@@ -66,6 +66,12 @@
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-sans font-bold tracking-tight text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-navy {
+    color: hsl(224 71.4% 4.1%);
   }
 }
 

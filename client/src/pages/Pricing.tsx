@@ -70,10 +70,10 @@ export default function Pricing() {
           <span className="inline-block px-4 py-1 rounded-full bg-blue-500/10 text-blue-400 text-sm font-semibold border border-blue-500/20">
             PRICING
           </span>
-          <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
+          <h1 className="text-4xl md:text-6xl font-bold text-foreground tracking-tight">
             Professional Packages for Every Player
           </h1>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-foreground dark:text-muted-foreground">
             Transparent pricing with no hidden fees. Choose the package that fits your needs and budget.
           </p>
         </div>

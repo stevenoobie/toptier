@@ -59,7 +59,7 @@ export default function Home() {
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-foreground mb-6 leading-[1.1]">
               <span className="text-foreground">Showcase Your Game at the</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">Highest Level</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
+            <p className="text-xl text-foreground dark:text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
               Premium highlight reels, scouting reports, and social content designed to get players signed and agencies noticed.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

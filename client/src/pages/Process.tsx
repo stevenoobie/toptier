@@ -43,10 +43,10 @@ export default function Process() {
           <span className="inline-block px-4 py-1 rounded-full bg-blue-500/10 text-blue-400 text-sm font-semibold border border-blue-500/20">
             THE PROCESS
           </span>
-          <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
+          <h1 className="text-4xl md:text-6xl font-bold text-foreground tracking-tight">
             From Consultation to Career-Ready Highlight Reel
           </h1>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-foreground dark:text-muted-foreground">
             Our streamlined 4-step process ensures you receive a professional highlight reel that showcases your strengths and meets recruitment standards.
           </p>
         </div>
