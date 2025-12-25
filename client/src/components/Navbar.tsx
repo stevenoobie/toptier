@@ -17,6 +17,7 @@ export function Navbar({ onContactClick }: { onContactClick: () => void }) {
 
   const navLinks = [
     { name: "Home", href: "/" },
+    { name: "Services", href: "/services" },
     { name: "Process", href: "/process" },
     { name: "Pricing", href: "/pricing" },
     { name: "About", href: "/about" },
