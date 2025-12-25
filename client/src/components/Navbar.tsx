@@ -35,7 +35,7 @@ export function Navbar({ onContactClick }: { onContactClick: () => void }) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         {/* Logo and Branding */}
-        <Link href="/" className="flex items-center gap-3 group">
+        <Link href="/" className="flex items-center gap-1 group">
           <div className="relative h-12 w-16 overflow-hidden rounded-md transition-transform group-hover:scale-105">
             <img 
               src={logoPng} 
@@ -43,7 +43,7 @@ export function Navbar({ onContactClick }: { onContactClick: () => void }) {
               className="h-full w-full object-contain"
             />
           </div>
-          <span className="text-lg font-bold tracking-tight text-foreground group-hover:text-primary transition-colors">
+          <span className="text-lg font-bold tracking-tight text-primary transition-colors">
             TopTier
           </span>
         </Link>

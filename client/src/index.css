@@ -7,19 +7,19 @@
 :root {
   /* Light Theme Palette based on provided image */
   --background: 210 40% 96.1%;    /* Very Light Blue #f1f5f9 */
-  --foreground: 222.2 84% 4.9%;
+  --foreground: 224 71.4% 4.1%;   /* Dark Navy Blue #020617 */
   
   --primary: 221.2 83.2% 53.3%;   /* Bright Blue #3b82f6 */
   --primary-foreground: 210 40% 98%;
   
   --secondary: 210 40% 90%;       /* Soft Blue-Gray #e2e8f0 */
-  --secondary-foreground: 222.2 47.4% 11.2%;
+  --secondary-foreground: 224 71.4% 4.1%;
   
   --muted: 210 40% 90%;
   --muted-foreground: 215.4 16.3% 46.9%;
   
   --accent: 210 40% 90%;
-  --accent-foreground: 222.2 47.4% 11.2%;
+  --accent-foreground: 224 71.4% 4.1%;
   
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 210 40% 98%;
@@ -32,27 +32,27 @@
 }
 
 .dark {
-  /* Dark Theme Palette (previous version or slightly adjusted) */
-  --background: 240 10% 4%;       /* Very dark gray/black #0a0a0b */
-  --foreground: 0 0% 98%;         /* Off-white */
+  /* Dark Theme Palette based on dark-night2 image */
+  --background: 222 47% 7%;      /* Very Deep Navy #0a1120 */
+  --foreground: 210 40% 98%;
   
   --primary: 217 91% 60%;         /* Vibrant blue accent */
-  --primary-foreground: 0 0% 100%;
+  --primary-foreground: 210 40% 98%;
   
-  --secondary: 240 6% 10%;        /* Dark gray for cards */
-  --secondary-foreground: 0 0% 98%;
+  --secondary: 222 47% 12%;       /* Slightly lighter deep navy */
+  --secondary-foreground: 210 40% 98%;
   
-  --muted: 240 4% 16%;
-  --muted-foreground: 240 5% 65%;
+  --muted: 222 47% 15%;
+  --muted-foreground: 215 20% 65%;
   
   --accent: 217 91% 60%;
-  --accent-foreground: 0 0% 100%;
+  --accent-foreground: 210 40% 98%;
   
-  --destructive: 0 84% 60%;
-  --destructive-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
 
-  --border: 240 4% 16%;
-  --input: 240 4% 16%;
+  --border: 222 47% 15%;
+  --input: 222 47% 15%;
   --ring: 217 91% 60%;
 }
 
