@@ -16,10 +16,10 @@ export function Navbar({ onContactClick }: { onContactClick: () => void }) {
   }, []);
 
   const navLinks = [
-    { name: "Services", href: "/#services" },
-    { name: "Portfolio", href: "/#portfolio" },
-    { name: "Process", href: "/#process" },
-    { name: "About", href: "/#about" },
+    { name: "Home", href: "/" },
+    { name: "Process", href: "/process" },
+    { name: "Pricing", href: "/pricing" },
+    { name: "About", href: "/about" },
   ];
 
   return (
@@ -33,9 +33,9 @@ export function Navbar({ onContactClick }: { onContactClick: () => void }) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 group">
-          <div className="h-8 w-8 bg-blue-600 rounded-lg flex items-center justify-center transform group-hover:rotate-12 transition-transform">
-            <span className="text-white font-bold text-xl">T</span>
+        <Link href="/" className="flex flex-col items-center gap-2 group">
+          <div className="h-12 w-12 bg-blue-600 rounded-lg flex items-center justify-center transform group-hover:rotate-12 transition-transform">
+            <span className="text-white font-bold text-2xl">T</span>
           </div>
           <span className="text-xl font-bold tracking-tight text-white group-hover:text-blue-500 transition-colors">
             TopTier

@@ -1,8 +1,9 @@
-import { Instagram, Twitter, Linkedin, Mail } from "lucide-react";
+import { Instagram, Facebook, Mail } from "lucide-react";
+import { SiTiktok } from "react-icons/si";
 
 export function Footer() {
   return (
-    <footer className="bg-secondary/50 border-t border-white/5 py-12 px-4">
+    <footer id="footer" className="bg-secondary/50 border-t border-white/5 py-12 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div className="col-span-1 md:col-span-2">
           <div className="flex items-center gap-2 mb-4">
@@ -17,31 +18,21 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="text-white font-semibold mb-4">Services</h4>
-          <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><a href="#" className="hover:text-blue-500 transition-colors">Player Highlights</a></li>
-            <li><a href="#" className="hover:text-blue-500 transition-colors">Scouting Reports</a></li>
-            <li><a href="#" className="hover:text-blue-500 transition-colors">Social Media Content</a></li>
-            <li><a href="#" className="hover:text-blue-500 transition-colors">Portfolio Websites</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="text-white font-semibold mb-4">Connect</h4>
+          <h4 className="text-white font-semibold mb-4">Follow Us</h4>
           <div className="flex gap-4 mb-4">
-            <a href="#" className="text-muted-foreground hover:text-white transition-colors">
+            <a href="https://www.instagram.com/toptiermedia01/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-white transition-colors">
               <Instagram className="h-5 w-5" />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-white transition-colors">
-              <Twitter className="h-5 w-5" />
+            <a href="https://www.facebook.com/TopTierMedia1/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-white transition-colors">
+              <Facebook className="h-5 w-5" />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-white transition-colors">
-              <Linkedin className="h-5 w-5" />
+            <a href="https://www.tiktok.com/@toptiermedia0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-white transition-colors">
+              <SiTiktok className="h-5 w-5" />
             </a>
           </div>
-          <a href="mailto:contact@toptier.media" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-white transition-colors">
+          <a href="mailto:mediatoptier1@gmail.com" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-white transition-colors">
             <Mail className="h-4 w-4" />
-            contact@toptier.media
+            mediatoptier1@gmail.com
           </a>
         </div>
       </div>

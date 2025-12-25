@@ -38,14 +38,13 @@ export default function Home() {
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-600/5 rounded-full blur-[100px] -z-10" />
         
         {/* Background Image Overlay */}
-        <div className="absolute inset-0 z-[-5] opacity-20">
-          {/* stadium night atmosphere */}
+        <div className="absolute inset-0 z-[-5] opacity-30">
           <img 
-            src="https://images.unsplash.com/photo-1522770179533-24471fcdba45?w=1920&q=80" 
+            src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1920&q=80" 
             alt="Stadium Atmosphere" 
-            className="w-full h-full object-cover grayscale"
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-background/80" />
+          <div className="absolute inset-0 bg-background/60" />
         </div>
 
         <div className="max-w-4xl mx-auto text-center space-y-8 relative z-10">
