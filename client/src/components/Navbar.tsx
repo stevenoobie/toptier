@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
-import logoPng from "@assets/logo.png";
+import logoPng from "@assets/logo_1766701825273.png";
 
 export function Navbar({ onContactClick }: { onContactClick: () => void }) {
   const [isOpen, setIsOpen] = useState(false);

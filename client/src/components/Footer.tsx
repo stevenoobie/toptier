@@ -1,6 +1,6 @@
 import { Instagram, Facebook, Mail } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
-import logoPng from "@assets/logo.png";
+import logoPng from "@assets/logo_1766701825273.png";
 
 export function Footer() {
   return (
