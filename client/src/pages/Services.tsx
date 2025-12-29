@@ -19,6 +19,8 @@ import {
 import { useState } from "react";
 import { ContactModal } from "@/components/ContactModal";
 
+import paceImage from "@assets/pace1_1767036023588.jpg";
+
 export default function Services() {
   const [contactOpen, setContactOpen] = useState(false);
 
@@ -163,20 +165,32 @@ export default function Services() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
             >
-              <Card className="group h-full bg-secondary/30 border-white/5 p-8 hover:border-blue-500/30 transition-all overflow-hidden">
-                <div className="h-12 w-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
-                  <service.icon className="h-6 w-6 text-blue-400 group-hover:text-white transition-colors" />
+              <Card className="group h-full bg-secondary/30 border-white/5 hover:border-blue-500/30 transition-all overflow-hidden flex flex-col">
+                <div className="relative h-48 w-full overflow-hidden mb-6">
+                  {service.title === "Speed & Pace Showcase" ? (
+                    <img 
+                      src={paceImage} 
+                      alt="Speed and Pace" 
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  ) : (
+                    <div className="h-full w-full bg-blue-500/10 flex items-center justify-center transition-colors group-hover:bg-blue-600">
+                      <service.icon className="h-12 w-12 text-blue-400 group-hover:text-white transition-colors" />
+                    </div>
+                  )}
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">{service.title}</h3>
-                <p className="text-sm text-muted-foreground mb-6 leading-relaxed">{service.desc}</p>
-                <ul className="space-y-2">
-                  {service.features.map((f, j) => (
-                    <li key={j} className="flex items-center gap-2 text-xs text-gray-400">
-                      <div className="h-1 w-1 rounded-full bg-blue-500/50" />
-                      {f}
-                    </li>
-                  ))}
-                </ul>
+                <div className="px-8 pb-8">
+                  <h3 className="text-xl font-bold text-[#1d2d3d] dark:text-foreground mb-3">{service.title}</h3>
+                  <p className="text-sm text-[#020617] dark:text-muted-foreground mb-6 leading-relaxed">{service.desc}</p>
+                  <ul className="space-y-2">
+                    {service.features.map((f, j) => (
+                      <li key={j} className="flex items-center gap-2 text-xs text-[#020617] dark:text-muted-foreground">
+                        <div className="h-1 w-1 rounded-full bg-blue-500/50" />
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </Card>
             </motion.div>
           ))}
