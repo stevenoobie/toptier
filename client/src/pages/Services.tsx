@@ -20,6 +20,13 @@ import { useState } from "react";
 import { ContactModal } from "@/components/ContactModal";
 
 import paceImage from "@assets/pace1_1767036023588.jpg";
+import careerImage from "@assets/career_performance_1767036227420.png";
+import passingImage from "@assets/passing_1767036252332.jpg";
+import finishingImage from "@assets/finishing-haaland_1767036268190.jpg";
+import dribblingImage from "@assets/dribbling_1767036284840.jpg";
+import defensiveImage from "@assets/def_1767036314815.jpg";
+import physicalImage from "@assets/body_strength_1767036334997.jpg";
+import leadershipImage from "@assets/leadership-keane_1767036353011.webp";
 
 export default function Services() {
   const [contactOpen, setContactOpen] = useState(false);
@@ -134,7 +141,14 @@ export default function Services() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
             >
-              <Card className="p-8 bg-blue-600/10 border-blue-500/20 h-full hover:border-blue-500/40 transition-all">
+              <Card className="p-8 bg-blue-600/10 border-blue-500/20 h-full hover:border-blue-500/40 transition-all overflow-hidden flex flex-col">
+                <div className="relative h-64 md:h-80 w-full overflow-hidden mb-6 -mx-8 -mt-8">
+                  <img 
+                    src={cat.title === "Career Performance Archive" ? careerImage : paceImage} 
+                    alt={cat.title} 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
                 <div className="h-14 w-14 bg-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-900/40">
                   <cat.icon className="h-7 w-7 text-white" />
                 </div>
@@ -167,17 +181,22 @@ export default function Services() {
             >
               <Card className="group h-full bg-secondary/30 border-white/5 hover:border-blue-500/30 transition-all overflow-hidden flex flex-col">
                 <div className="relative h-64 md:h-80 w-full overflow-hidden mb-6">
-                  {service.title === "Speed & Pace Showcase" ? (
-                    <img 
-                      src={paceImage} 
-                      alt="Speed and Pace" 
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                  ) : (
-                    <div className="h-full w-full bg-blue-500/10 flex items-center justify-center transition-colors group-hover:bg-blue-600">
-                      <service.icon className="h-12 w-12 text-blue-400 group-hover:text-white transition-colors" />
-                    </div>
-                  )}
+                  {(() => {
+                    let imgSrc = paceImage;
+                    if (service.title === "Passing & Vision") imgSrc = passingImage;
+                    else if (service.title === "Finishing & Goals") imgSrc = finishingImage;
+                    else if (service.title === "Dribbling & Skills") imgSrc = dribblingImage;
+                    else if (service.title === "Defensive Prowess") imgSrc = defensiveImage;
+                    else if (service.title === "Physical & Strength") imgSrc = physicalImage;
+
+                    return (
+                      <img 
+                        src={imgSrc} 
+                        alt={service.title} 
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                    );
+                  })()}
                 </div>
                 <div className="px-8 pb-8">
                   <h3 className="text-xl font-bold text-[#1d2d3d] dark:text-foreground mb-3">{service.title}</h3>
@@ -207,19 +226,28 @@ export default function Services() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <Card className="p-8 bg-blue-600/10 border-blue-500/20 h-full flex items-start gap-6">
-                <div className="shrink-0 h-16 w-16 bg-blue-600 rounded-2xl flex items-center justify-center shadow-xl shadow-blue-900/20">
-                  <service.icon className="h-8 w-8 text-white" />
+              <Card className="p-8 bg-blue-600/10 border-blue-500/20 h-full flex flex-col hover:border-blue-500/40 transition-all overflow-hidden group">
+                <div className="relative h-64 md:h-80 w-full overflow-hidden mb-6 -mx-8 -mt-8">
+                  <img 
+                    src={service.title === "Leadership & Character" ? leadershipImage : "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&q=80"} 
+                    alt={service.title} 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
                 </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-white mb-3">{service.title}</h3>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">{service.desc}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {service.features.map((f, j) => (
-                      <Badge key={j} variant="secondary" className="bg-white/5 border-white/10 text-gray-400">
-                        {f}
-                      </Badge>
-                    ))}
+                <div className="flex items-start gap-6">
+                  <div className="shrink-0 h-16 w-16 bg-blue-600 rounded-2xl flex items-center justify-center shadow-xl shadow-blue-900/20">
+                    <service.icon className="h-8 w-8 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-[#1d2d3d] dark:text-foreground mb-3">{service.title}</h3>
+                    <p className="text-[#020617] dark:text-muted-foreground mb-4 leading-relaxed">{service.desc}</p>
+                    <div className="flex flex-wrap gap-2">
+                      {service.features.map((f, j) => (
+                        <Badge key={j} variant="secondary" className="bg-white/5 border-white/10 text-[#020617] dark:text-gray-400">
+                          {f}
+                        </Badge>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </Card>
