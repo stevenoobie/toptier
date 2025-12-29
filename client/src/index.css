@@ -7,7 +7,7 @@
 :root {
   /* Light Theme Palette based on provided image */
   --background: 210 40% 96.1%;    /* Very Light Blue #f1f5f9 */
-  --foreground: 224 71.4% 4.1%;   /* Dark Navy Blue #020617 (was black text) */
+  --foreground: 224 71.4% 4.1%;   /* Dark Navy Blue #020617 */
   
   --primary: 221.2 83.2% 53.3%;   /* Bright Blue #3b82f6 */
   --primary-foreground: 210 40% 98%;
@@ -69,13 +69,16 @@
     font-family: 'Inter', sans-serif;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-sans font-bold tracking-tight text-foreground;
+    @apply font-sans font-bold tracking-tight text-[#1d2d3d] dark:text-foreground;
   }
 }
 
 @layer utilities {
-  .text-navy {
-    color: hsl(224 71.4% 4.1%);
+  .text-light-navy {
+    color: #1d2d3d !important;
+  }
+  .text-dark-navy {
+    color: #020617 !important;
   }
 }
 

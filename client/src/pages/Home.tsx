@@ -121,13 +121,13 @@ export default function Home() {
                 <div className="h-12 w-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-6">
                   <item.icon className="h-6 w-6 text-blue-400" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <h3 className="text-xl font-bold text-[#1d2d3d] dark:text-foreground mb-3">{item.title}</h3>
+                <p className="text-[#020617] dark:text-muted-foreground mb-6 leading-relaxed">
                   {item.desc}
                 </p>
                 <ul className="space-y-3">
                   {item.features.map((feature) => (
-                    <li key={feature} className="flex items-center text-sm text-gray-400">
+                    <li key={feature} className="flex items-center text-sm text-[#020617] dark:text-muted-foreground">
                       <CheckCircle2 className="h-4 w-4 text-blue-500 mr-2" />
                       {feature}
                     </li>
@@ -170,8 +170,8 @@ export default function Home() {
                     <feature.icon className="h-5 w-5 text-blue-400" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{feature.desc}</p>
+                    <h3 className="text-xl font-bold text-[#1d2d3d] dark:text-foreground mb-2">{feature.title}</h3>
+                    <p className="text-[#020617] dark:text-muted-foreground leading-relaxed">{feature.desc}</p>
                   </div>
                 </div>
               ))}

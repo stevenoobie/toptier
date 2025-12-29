@@ -66,8 +66,8 @@ export default function Process() {
                 <div className="h-12 w-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mb-6">
                   {i + 1}
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">{step.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{step.desc}</p>
+                <h3 className="text-2xl font-bold text-[#1d2d3d] dark:text-foreground mb-4">{step.title}</h3>
+                <p className="text-[#020617] dark:text-muted-foreground leading-relaxed">{step.desc}</p>
               </Card>
             </motion.div>
           ))}

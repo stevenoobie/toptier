@@ -35,8 +35,8 @@ export default function About() {
             TopTier produces bespoke player highlight films that translate performance into refined visual narratives. We work with agents, club recruitment teams, and professional players to present a player’s profile with editorial clarity, tactical context, and cinematic polish. Our work is not casual highlight reels — it’s curated representation designed to influence perception, support negotiations, and position talent for the next level.
           </p>
           <div className="bg-secondary/30 p-8 rounded-xl border border-white/5 my-12">
-            <h3 className="text-2xl font-bold text-white mb-4 mt-0">We deliver:</h3>
-            <ul className="list-disc pl-6 space-y-2">
+            <h3 className="text-2xl font-bold text-[#1d2d3d] dark:text-foreground mb-4 mt-0">We deliver:</h3>
+            <ul className="list-disc pl-6 space-y-2 text-[#020617] dark:text-muted-foreground">
               <li>Editorial accuracy that respects scouting standards.</li>
               <li>Professional craftsmanship that elevates the player’s image.</li>
               <li>Discretion and professionalism in all client interactions.</li>

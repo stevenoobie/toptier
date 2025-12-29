@@ -136,11 +136,11 @@ export default function Services() {
                 <div className="h-14 w-14 bg-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-900/40">
                   <cat.icon className="h-7 w-7 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">{cat.title}</h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">{cat.desc}</p>
+                <h3 className="text-2xl font-bold text-[#1d2d3d] dark:text-foreground mb-4">{cat.title}</h3>
+                <p className="text-[#020617] dark:text-muted-foreground mb-6 leading-relaxed">{cat.desc}</p>
                 <ul className="space-y-3">
                   {cat.features.map((f, j) => (
-                    <li key={j} className="flex items-start gap-3 text-sm text-gray-300">
+                    <li key={j} className="flex items-start gap-3 text-sm text-[#020617] dark:text-muted-foreground">
                       <div className="h-1.5 w-1.5 rounded-full bg-blue-500 mt-1.5 shrink-0" />
                       {f}
                     </li>

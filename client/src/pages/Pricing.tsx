@@ -94,13 +94,13 @@ export default function Pricing() {
                 </div>
               )}
               <div className="mb-8">
-                <h3 className="text-2xl font-bold text-white mb-2">{tier.name}</h3>
+                <h3 className="text-2xl font-bold text-[#1d2d3d] dark:text-foreground mb-2">{tier.name}</h3>
                 <div className="text-4xl font-bold text-blue-500 mb-4">{tier.price}</div>
-                <p className="text-sm text-muted-foreground">{tier.description}</p>
+                <p className="text-sm text-[#020617] dark:text-muted-foreground">{tier.description}</p>
               </div>
               <ul className="space-y-4 mb-8 flex-1">
                 {tier.features.map((feature) => (
-                  <li key={feature} className="flex items-start gap-3 text-sm text-gray-300">
+                  <li key={feature} className="flex items-start gap-3 text-sm text-[#020617] dark:text-muted-foreground">
                     <Check className="h-4 w-4 text-blue-500 mt-0.5" />
                     {feature}
                   </li>
