@@ -166,7 +166,7 @@ export default function Services() {
               transition={{ delay: i * 0.05 }}
             >
               <Card className="group h-full bg-secondary/30 border-white/5 hover:border-blue-500/30 transition-all overflow-hidden flex flex-col">
-                <div className="relative h-48 w-full overflow-hidden mb-6">
+                <div className="relative h-64 md:h-80 w-full overflow-hidden mb-6">
                   {service.title === "Speed & Pace Showcase" ? (
                     <img 
                       src={paceImage} 
