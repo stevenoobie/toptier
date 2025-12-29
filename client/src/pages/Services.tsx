@@ -112,7 +112,7 @@ export default function Services() {
           <Badge variant="outline" className="px-4 py-1 border-blue-500/30 text-blue-400 bg-blue-500/5">
             OUR SERVICES
           </Badge>
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground tracking-tight">
+          <h1 className="text-4xl md:text-6xl font-bold text-[#1d2d3d] dark:text-foreground tracking-tight">
             Specialized Highlight Videos for Every Attribute
           </h1>
           <p className="text-xl text-foreground dark:text-muted-foreground">

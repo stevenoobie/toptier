@@ -7,7 +7,7 @@
 :root {
   /* Light Theme Palette based on provided image */
   --background: 210 40% 96.1%;    /* Very Light Blue #f1f5f9 */
-  --foreground: 224 71.4% 4.1%;   /* Dark Navy Blue #020617 */
+  --foreground: 224 71.4% 4.1%;   /* Dark Navy Blue #020617 (was black text) */
   
   --primary: 221.2 83.2% 53.3%;   /* Bright Blue #3b82f6 */
   --primary-foreground: 210 40% 98%;
@@ -16,7 +16,7 @@
   --secondary-foreground: 224 71.4% 4.1%;
   
   --muted: 210 40% 90%;
-  --muted-foreground: 224 71.4% 4.1%; /* Dark Navy Blue for muted text in light mode */
+  --muted-foreground: 224 71.4% 4.1%;
   
   --accent: 210 40% 90%;
   --accent-foreground: 224 71.4% 4.1%;
@@ -29,6 +29,10 @@
   --ring: 221.2 83.2% 53.3%;
   
   --radius: 0.5rem;
+
+  /* Custom Navy Colors */
+  --light-navy: 217 33% 17%;    /* Light Navy #1d2d3d */
+  --dark-navy: 224 71% 4%;     /* Dark Navy Blue #020617 */
 }
 
 .dark {

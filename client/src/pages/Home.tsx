@@ -56,8 +56,8 @@ export default function Home() {
             <span className="inline-block px-4 py-1.5 rounded-full bg-blue-500/10 text-blue-400 text-sm font-semibold tracking-wide uppercase border border-blue-500/20 mb-6">
               Elite Player Media
             </span>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-foreground mb-6 leading-[1.1]">
-              <span className="text-foreground">Showcase Your Game at the</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">Highest Level</span>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-[#1d2d3d] dark:text-foreground mb-6 leading-[1.1]">
+              <span className="text-[#1d2d3d] dark:text-foreground">Showcase Your Game at the</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">Highest Level</span>
             </h1>
             <p className="text-xl text-foreground dark:text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
               Premium highlight reels, scouting reports, and social content designed to get players signed and agencies noticed.
