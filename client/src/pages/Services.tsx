@@ -27,6 +27,7 @@ import dribblingImage from "@assets/dribbling_1767036284840.jpg";
 import defensiveImage from "@assets/def_1767036314815.jpg";
 import physicalImage from "@assets/body_strength_1767036334997.jpg";
 import leadershipImage from "@assets/leadership-keane_1767036353011.webp";
+import seasonImage from "@assets/season_performance2_1767058765274.jpg";
 
 export default function Services() {
   const [contactOpen, setContactOpen] = useState(false);
@@ -141,12 +142,12 @@ export default function Services() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
             >
-              <Card className="p-8 bg-blue-600/10 border-blue-500/20 h-full hover:border-blue-500/40 transition-all overflow-hidden flex flex-col">
+              <Card className="p-8 bg-blue-600/10 border-blue-500/20 h-full hover:border-blue-500/40 transition-all overflow-hidden flex flex-col group">
                 <div className="relative h-64 md:h-80 w-full overflow-hidden mb-6 -mx-8 -mt-8">
                   <img 
-                    src={cat.title === "Career Performance Archive" ? careerImage : paceImage} 
+                    src={cat.title === "Career Performance Archive" ? careerImage : seasonImage} 
                     alt={cat.title} 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-contain object-top transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="h-14 w-14 bg-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-900/40">
@@ -180,7 +181,7 @@ export default function Services() {
               transition={{ delay: i * 0.05 }}
             >
               <Card className="group h-full bg-secondary/30 border-white/5 hover:border-blue-500/30 transition-all overflow-hidden flex flex-col">
-                <div className="relative h-64 md:h-80 w-full overflow-hidden mb-6">
+                <div className="relative h-64 md:h-80 w-full overflow-hidden mb-6 bg-black/20">
                   {(() => {
                     let imgSrc = paceImage;
                     if (service.title === "Passing & Vision") imgSrc = passingImage;
@@ -193,7 +194,7 @@ export default function Services() {
                       <img 
                         src={imgSrc} 
                         alt={service.title} 
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        className="w-full h-full object-contain object-center transition-transform duration-500 group-hover:scale-105"
                       />
                     );
                   })()}
@@ -227,11 +228,11 @@ export default function Services() {
               viewport={{ once: true }}
             >
               <Card className="p-8 bg-blue-600/10 border-blue-500/20 h-full flex flex-col hover:border-blue-500/40 transition-all overflow-hidden group">
-                <div className="relative h-64 md:h-80 w-full overflow-hidden mb-6 -mx-8 -mt-8">
+                <div className="relative h-64 md:h-80 w-full overflow-hidden mb-6 -mx-8 -mt-8 bg-black/20">
                   <img 
                     src={service.title === "Leadership & Character" ? leadershipImage : "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&q=80"} 
                     alt={service.title} 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-contain object-center transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="flex items-start gap-6">

@@ -37,16 +37,16 @@
 
 .dark {
   /* Dark Theme Palette based on dark-night2 image */
-  --background: 222 47% 7%;      /* Very Deep Navy #0a1120 */
+  --background: 221 100% 7%;      /* #000c24 - Dark Blue from image */
   --foreground: 210 40% 98%;
   
   --primary: 217 91% 60%;         /* Vibrant blue accent */
   --primary-foreground: 210 40% 98%;
   
-  --secondary: 222 47% 12%;       /* Slightly lighter deep navy */
+  --secondary: 221 100% 12%;      /* Slightly lighter blue-black #001640 */
   --secondary-foreground: 210 40% 98%;
   
-  --muted: 222 47% 15%;
+  --muted: 221 100% 15%;
   --muted-foreground: 215 20% 65%;
   
   --accent: 217 91% 60%;
@@ -55,8 +55,8 @@
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 210 40% 98%;
 
-  --border: 222 47% 15%;
-  --input: 222 47% 15%;
+  --border: 221 100% 15%;
+  --input: 221 100% 15%;
   --ring: 217 91% 60%;
 }
 
