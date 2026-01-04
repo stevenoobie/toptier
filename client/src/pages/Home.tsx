@@ -22,7 +22,7 @@ import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
 import { motion } from "framer-motion";
 
-import tunnelHero from "@assets/545455445_1767559306790.jpg";
+import tunnelHero from "@assets/545455445_1767559567765.jpg";
 
 export default function Home() {
   const [contactOpen, setContactOpen] = useState(false);
