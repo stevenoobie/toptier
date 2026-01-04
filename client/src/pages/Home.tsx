@@ -22,6 +22,8 @@ import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
 import { motion } from "framer-motion";
 
+import tunnelHero from "@assets/545455445_1767559306790.jpg";
+
 export default function Home() {
   const [contactOpen, setContactOpen] = useState(false);
   const { data: portfolioItems, isLoading } = usePortfolio();
@@ -38,13 +40,13 @@ export default function Home() {
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-400/5 rounded-full blur-[100px] -z-10" />
         
         {/* Background Image Overlay */}
-        <div className="absolute inset-0 z-[-5] opacity-20">
+        <div className="absolute inset-0 z-[-5]">
           <img 
-            src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1920&q=80" 
-            alt="Stadium Atmosphere" 
-            className="w-full h-full object-cover grayscale"
+            src={tunnelHero} 
+            alt="Stadium Tunnel" 
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-background/90" />
+          <div className="absolute inset-0 bg-black/40" />
         </div>
 
         <div className="max-w-4xl mx-auto text-center space-y-8 relative z-10">
@@ -56,8 +58,10 @@ export default function Home() {
             <span className="inline-block px-4 py-1.5 rounded-full bg-blue-500/10 text-blue-400 text-sm font-semibold tracking-wide uppercase border border-blue-500/20 mb-6">
               Elite Player Media
             </span>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-[#1d2d3d] dark:text-foreground mb-6 leading-[1.1]">
-              <span className="text-[#1d2d3d] dark:text-foreground">Showcase Your Game at the</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">Highest Level</span>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-6 leading-[1.1]">
+              <span className="bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
+                Elevate your game
+              </span>
             </h1>
             <p className="text-xl text-foreground dark:text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
               Premium highlight reels, scouting reports, and social content designed to get players signed and agencies noticed.
