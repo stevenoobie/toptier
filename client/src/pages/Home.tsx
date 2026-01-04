@@ -22,7 +22,7 @@ import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
 import { motion } from "framer-motion";
 
-import tunnelHero from "@assets/545455445_1767559567765.jpg";
+import tunnelHero from "@assets/545455445_1767560117420.jpg";
 
 export default function Home() {
   const [contactOpen, setContactOpen] = useState(false);
@@ -35,12 +35,8 @@ export default function Home() {
 
       {/* HERO SECTION */}
       <section className="relative min-h-[90vh] flex items-center justify-center pt-20 px-4 overflow-hidden">
-        {/* Abstract Background Elements */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] -z-10" />
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-400/5 rounded-full blur-[100px] -z-10" />
-        
         {/* Background Image Overlay */}
-        <div className="absolute inset-0 z-[-5]">
+        <div className="absolute inset-0 z-0">
           <img 
             src={tunnelHero} 
             alt="Stadium Tunnel" 
@@ -59,7 +55,13 @@ export default function Home() {
               Elite Player Media
             </span>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-6 leading-[1.1]">
-              <span className="bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent uppercase">
+              <span 
+                className="bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent uppercase"
+                style={{
+                  WebkitTextStroke: '2px #3b82f6',
+                  paintOrder: 'stroke fill'
+                }}
+              >
                 Elevate your game
               </span>
             </h1>
