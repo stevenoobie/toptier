@@ -58,6 +58,9 @@
   --border: 221 100% 10%;        /* Deepened from 15% */
   --input: 221 100% 10%;
   --ring: 217 91% 60%;
+  .text-outline-blue {
+    -webkit-text-stroke: 1px #3b82f6;
+  }
 }
 
 @layer base {
