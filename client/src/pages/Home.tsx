@@ -56,11 +56,7 @@ export default function Home() {
             </span>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-6 leading-[1.1]">
               <span 
-                className="bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent uppercase"
-                style={{
-                  WebkitTextStroke: '2px #3b82f6',
-                  paintOrder: 'stroke fill'
-                }}
+                className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent uppercase"
               >
                 Elevate your game
               </span>
