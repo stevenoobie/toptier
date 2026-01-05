@@ -20,6 +20,7 @@ import {
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
+import { motion } from "framer-motion";
 import heroImg from "@assets/545455445_1767616427857.jpg";
 
 export default function Home() {
