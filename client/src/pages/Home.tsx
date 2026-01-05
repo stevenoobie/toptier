@@ -92,7 +92,6 @@ export default function Home() {
           title="Built For The Industry" 
           subtitle="Specialized media solutions for every stakeholder in the professional game."
           centered
-          className="text-[#1d2d3d] font-semibold"
         />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
@@ -217,7 +216,6 @@ export default function Home() {
           title="Recent Work" 
           subtitle="See how we've helped players sign for top academies and professional clubs."
           centered
-          className="text-[#1d2d3d] font-semibold"
         />
         
         {isLoading ? (
@@ -323,7 +321,6 @@ export default function Home() {
           title="Simple Process. Elite Results." 
           subtitle="From raw footage to a polished product in four simple steps."
           centered
-          className="text-[#1d2d3d] font-semibold"
         />
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
           {/* Connecting line */}

@@ -40,7 +40,7 @@ export function SectionHeader({ title, subtitle, centered = false }: { title: st
         {title}
       </h2>
       {subtitle && (
-        <p className="text-lg text-[#020617] dark:text-muted-foreground max-w-2xl mx-auto">
+        <p className="text-lg text-[#1d2d3d] font-semibold dark:text-muted-foreground max-w-2xl mx-auto">
           {subtitle}
         </p>
       )}
