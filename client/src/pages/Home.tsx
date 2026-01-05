@@ -56,7 +56,7 @@ export default function Home() {
               Elite Player Media
             </span>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-white mb-6 leading-[1.1] uppercase">
-              <span className="text-[#1E90FF]">
+              <span className="text-[#1560BD]">
                 Elevate your game
               </span>
             </h1>
