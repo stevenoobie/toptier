@@ -57,7 +57,7 @@ export function Navbar({ onContactClick }: { onContactClick: () => void }) {
               key={link.name}
               href={link.href}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
+                "text-base font-semibold tracking-tight transition-colors hover:text-primary font-sans",
                 location === link.href ? "text-primary" : "text-muted-foreground"
               )}
             >
