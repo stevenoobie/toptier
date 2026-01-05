@@ -52,11 +52,11 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block px-4 py-1.5 rounded-full bg-blue-500/10 text-blue-400 text-sm font-semibold tracking-wide uppercase border border-blue-500/20 mb-6">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-blue-500/10 text-[#1E90FF] text-sm font-semibold tracking-wide uppercase border border-[#1E90FF]/20 mb-6">
               Elite Player Media
             </span>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-white mb-6 leading-[1.1] uppercase">
-              <span className="text-[#ADD8E6]">
+              <span className="text-[#1E90FF]">
                 Elevate your game
               </span>
             </h1>
