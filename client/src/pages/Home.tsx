@@ -20,7 +20,7 @@ import {
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
-import { motion } from "framer-motion";
+import heroImg from "@assets/545455445_1767616427857.jpg";
 
 export default function Home() {
   const [contactOpen, setContactOpen] = useState(false);
@@ -32,21 +32,16 @@ export default function Home() {
       <ContactModal open={contactOpen} onOpenChange={setContactOpen} />
 
       {/* HERO SECTION */}
-      <section className="relative min-h-[90vh] flex items-center justify-center pt-20 px-4 overflow-hidden">
-        {/* Abstract Background Elements */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] -z-10" />
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-400/5 rounded-full blur-[100px] -z-10" />
-        
-        {/* Background Image Overlay */}
-        <div className="absolute inset-0 z-[-5] opacity-20">
-          <img 
-            src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=1920&q=80" 
-            alt="Stadium Atmosphere" 
-            className="w-full h-full object-cover grayscale"
-          />
-          <div className="absolute inset-0 bg-background/90" />
-        </div>
-
+      <section 
+        className="relative min-h-screen flex items-center justify-center pt-20 px-4 overflow-hidden"
+        style={{
+          backgroundImage: `url(${heroImg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          minHeight: "100vh"
+        }}
+      >
         <div className="max-w-4xl mx-auto text-center space-y-8 relative z-10">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -56,19 +51,19 @@ export default function Home() {
             <span className="inline-block px-4 py-1.5 rounded-full bg-blue-500/10 text-blue-400 text-sm font-semibold tracking-wide uppercase border border-blue-500/20 mb-6">
               Elite Player Media
             </span>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-[#1d2d3d] dark:text-foreground mb-6 leading-[1.1] uppercase">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-white mb-6 leading-[1.1] uppercase">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-500 to-blue-700 animate-gradient-x">
                 Elevate your game
               </span>
             </h1>
-            <p className="text-xl text-[#1d2d3d] dark:text-muted-foreground font-semibold max-w-2xl mx-auto mb-10 leading-relaxed">
+            <p className="text-xl text-white font-semibold max-w-2xl mx-auto mb-10 leading-relaxed drop-shadow-md">
               Premium performance videos, in-depth scouting anaylsis, strategic social content crafted to position players for professional contracts and raise market value and brand recognition.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button 
                 size="lg" 
                 onClick={() => setContactOpen(true)}
-                className="px-8 py-6 text-lg rounded-xl shadow-xl shadow-primary/20 hover:shadow-primary/40 transition-all hover:-translate-y-0.5"
+                className="px-8 py-6 text-lg rounded-xl shadow-xl shadow-primary/20 hover:shadow-primary/40 transition-all hover:-translate-y-0.5 bg-blue-600 hover:bg-blue-700 text-white border-0"
               >
                 Request a Video
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -76,7 +71,7 @@ export default function Home() {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="bg-background/50 backdrop-blur-sm border-border text-foreground hover:bg-accent px-8 py-6 text-lg rounded-xl"
+                className="bg-white/5 backdrop-blur-md border-white/20 text-white hover:bg-white/10 px-8 py-6 text-lg rounded-xl"
                 onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 View Samples
