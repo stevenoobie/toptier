@@ -55,10 +55,8 @@ export default function Home() {
             <span className="inline-block px-4 py-1.5 rounded-full bg-blue-500/10 text-blue-400 text-sm font-semibold tracking-wide uppercase border border-blue-500/20 mb-6">
               Elite Player Media
             </span>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-white mb-6 leading-[1.1] uppercase">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-500 to-blue-700 animate-gradient-x">
-                Elevate your game
-              </span>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-[#3b82f6] mb-6 leading-[1.1] uppercase [text-shadow:2px_2px_0_#020617,-2px_-2px_0_#020617,2px_-2px_0_#020617,-2px_2px_0_#020617]">
+              Elevate your game
             </h1>
             <p className="text-xl text-white font-semibold max-w-2xl mx-auto mb-10 leading-relaxed drop-shadow-md">
               Premium performance videos, in-depth scouting anaylsis, strategic social content crafted to position players for professional contracts and raise market value and brand recognition.
