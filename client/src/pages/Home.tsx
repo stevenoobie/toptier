@@ -61,7 +61,7 @@ export default function Home() {
                 Elevate your game
               </span>
             </h1>
-            <p className="text-xl text-foreground dark:text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
+            <p className="text-xl text-[#1d2d3d] dark:text-muted-foreground font-semibold max-w-2xl mx-auto mb-10 leading-relaxed">
               Premium performance videos, in-depth scouting anaylsis, strategic social content crafted to position players for professional contracts and raise market value and brand recognition.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
