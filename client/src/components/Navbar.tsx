@@ -57,8 +57,8 @@ export function Navbar({ onContactClick }: { onContactClick: () => void }) {
               key={link.name}
               href={link.href}
               className={cn(
-                "text-lg font-bold tracking-tight transition-colors hover:text-primary",
-                location === link.href ? "text-primary" : "text-[#020617] dark:text-muted-foreground"
+                "text-lg font-bold tracking-tight transition-colors hover:text-[#1E90FF]",
+                location === link.href ? "text-[#1E90FF]" : "text-white/90 hover:text-white"
               )}
               style={{ fontFamily: '"Neue Haas Grotesk Display Pro", "Inter", sans-serif' }}
             >
