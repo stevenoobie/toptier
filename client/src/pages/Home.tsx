@@ -56,7 +56,7 @@ export default function Home() {
               Elite Player Media
             </span>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-white mb-6 leading-[1.1] uppercase">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-500 to-blue-700 animate-gradient-x">
+              <span className="text-[#ADD8E6]">
                 Elevate your game
               </span>
             </h1>
