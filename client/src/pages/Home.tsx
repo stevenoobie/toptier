@@ -92,6 +92,7 @@ export default function Home() {
           title="Built For The Industry" 
           subtitle="Specialized media solutions for every stakeholder in the professional game."
           centered
+          className="text-[#1d2d3d] font-semibold"
         />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
@@ -124,12 +125,12 @@ export default function Home() {
                   <item.icon className="h-6 w-6 text-blue-400" />
                 </div>
                 <h3 className="text-xl font-bold text-[#1d2d3d] dark:text-foreground mb-3">{item.title}</h3>
-                <p className="text-[#020617] dark:text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-[#1d2d3d] font-semibold dark:text-muted-foreground mb-6 leading-relaxed">
                   {item.desc}
                 </p>
                 <ul className="space-y-3">
                   {item.features.map((feature) => (
-                    <li key={feature} className="flex items-center text-sm text-[#020617] dark:text-muted-foreground">
+                    <li key={feature} className="flex items-center text-sm text-[#1d2d3d] font-semibold dark:text-muted-foreground">
                       <CheckCircle2 className="h-4 w-4 text-blue-500 mr-2" />
                       {feature}
                     </li>
@@ -173,7 +174,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-[#1d2d3d] dark:text-foreground mb-2">{feature.title}</h3>
-                    <p className="text-[#020617] dark:text-muted-foreground leading-relaxed">{feature.desc}</p>
+                    <p className="text-[#1d2d3d] font-semibold dark:text-muted-foreground leading-relaxed">{feature.desc}</p>
                   </div>
                 </div>
               ))}
@@ -216,6 +217,7 @@ export default function Home() {
           title="Recent Work" 
           subtitle="See how we've helped players sign for top academies and professional clubs."
           centered
+          className="text-[#1d2d3d] font-semibold"
         />
         
         {isLoading ? (
@@ -321,6 +323,7 @@ export default function Home() {
           title="Simple Process. Elite Results." 
           subtitle="From raw footage to a polished product in four simple steps."
           centered
+          className="text-[#1d2d3d] font-semibold"
         />
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
           {/* Connecting line */}
