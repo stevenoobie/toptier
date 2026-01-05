@@ -36,8 +36,8 @@ export function Section({ id, className, children, dark = false }: SectionProps)
 export function SectionHeader({ title, subtitle, centered = false }: { title: string; subtitle?: string; centered?: boolean }) {
   return (
     <div className={cn("mb-12 md:mb-20", centered && "text-center")}>
-      <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-tight text-[#1d2d3d] dark:text-foreground">
-        {title}
+      <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-tight text-[#3b82f6] dark:text-foreground capitalize">
+        {title.toLowerCase()}
       </h2>
       {subtitle && (
         <p className="text-lg text-[#1d2d3d] font-semibold dark:text-muted-foreground max-w-2xl mx-auto">

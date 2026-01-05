@@ -56,7 +56,7 @@ export default function Home() {
             <span className="inline-block px-4 py-1.5 rounded-full bg-blue-500/10 text-blue-400 text-sm font-semibold tracking-wide uppercase border border-blue-500/20 mb-6">
               Elite Player Media
             </span>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-[#1d2d3d] dark:text-foreground mb-6 leading-[1.1] uppercase">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-[#1d2d3d] dark:text-foreground mb-6 leading-[1.1] capitalize">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-500 to-blue-700 animate-gradient-x">
                 Elevate your game
               </span>
@@ -123,7 +123,7 @@ export default function Home() {
                 <div className="h-12 w-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-6">
                   <item.icon className="h-6 w-6 text-blue-400" />
                 </div>
-                <h3 className="text-xl font-bold text-[#1d2d3d] dark:text-foreground mb-3">{item.title}</h3>
+                <h3 className="text-xl font-bold text-[#3b82f6] dark:text-foreground mb-3 capitalize">{item.title.toLowerCase()}</h3>
                 <p className="text-[#1d2d3d] font-semibold dark:text-muted-foreground mb-6 leading-relaxed">
                   {item.desc}
                 </p>
@@ -172,7 +172,7 @@ export default function Home() {
                     <feature.icon className="h-5 w-5 text-blue-400" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-[#1d2d3d] dark:text-foreground mb-2">{feature.title}</h3>
+                    <h3 className="text-xl font-bold text-[#3b82f6] dark:text-foreground mb-2 capitalize">{feature.title.toLowerCase()}</h3>
                     <p className="text-[#1d2d3d] font-semibold dark:text-muted-foreground leading-relaxed">{feature.desc}</p>
                   </div>
                 </div>
@@ -336,7 +336,7 @@ export default function Home() {
               <div className="w-24 h-24 mx-auto bg-background border-4 border-secondary rounded-full flex items-center justify-center mb-6 relative z-10">
                 <span className="text-3xl font-bold text-blue-500 font-mono">{item.step}</span>
               </div>
-              <h3 className="text-lg font-bold text-[#1d2d3d] dark:text-foreground mb-2">{item.title}</h3>
+              <h3 className="text-lg font-bold text-[#3b82f6] dark:text-foreground mb-2 capitalize">{item.title.toLowerCase()}</h3>
               <p className="text-sm text-[#1d2d3d] font-semibold dark:text-muted-foreground">{item.desc}</p>
             </div>
           ))}
