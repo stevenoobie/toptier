@@ -350,7 +350,7 @@ export default function Home() {
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <Trophy className="h-16 w-16 text-yellow-500 mx-auto mb-8 opacity-80" />
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 tracking-tighter">
+          <h2 className="text-4xl md:text-6xl font-bold text-[#1d2d3d] dark:text-foreground mb-8 tracking-tighter">
             Football Is Performance.<br />
             <span className="text-blue-500">Representation Is Power.</span>
           </h2>
