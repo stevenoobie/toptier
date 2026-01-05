@@ -43,6 +43,9 @@ export default function Home() {
           minHeight: "100vh"
         }}
       >
+        {/* Dark Wash Overlay */}
+        <div className="absolute inset-0 bg-black/60 z-0" />
+        
         <div className="max-w-4xl mx-auto text-center space-y-8 relative z-10">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
