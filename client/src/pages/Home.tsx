@@ -336,8 +336,8 @@ export default function Home() {
               <div className="w-24 h-24 mx-auto bg-background border-4 border-secondary rounded-full flex items-center justify-center mb-6 relative z-10">
                 <span className="text-3xl font-bold text-blue-500 font-mono">{item.step}</span>
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
-              <p className="text-sm text-muted-foreground">{item.desc}</p>
+              <h3 className="text-lg font-bold text-[#1d2d3d] dark:text-foreground mb-2">{item.title}</h3>
+              <p className="text-sm text-[#1d2d3d] font-semibold dark:text-muted-foreground">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -354,7 +354,7 @@ export default function Home() {
             Football Is Performance.<br />
             <span className="text-blue-500">Representation Is Power.</span>
           </h2>
-          <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
+          <p className="text-xl text-[#1d2d3d] font-semibold dark:text-muted-foreground mb-12 max-w-2xl mx-auto">
             Don't let your hard work go unnoticed. We turn your performances into opportunities.
           </p>
           <Button 
