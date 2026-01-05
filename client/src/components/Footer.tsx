@@ -13,7 +13,7 @@ export function Footer() {
               alt="TopTier Logo" 
               className="h-10 w-auto object-contain"
             />
-            <span className="text-xl font-bold text-[#1d2d3d] dark:text-foreground">TopTier</span>
+            <span className="text-xl font-bold text-[#2086d1] dark:text-foreground">TopTier</span>
           </div>
           <p className="text-[#1d2d3d] font-semibold dark:text-muted-foreground max-w-sm leading-relaxed">
             Professional football media services dedicated to showcasing elite talent to the world's biggest clubs and agencies.
