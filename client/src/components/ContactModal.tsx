@@ -18,7 +18,10 @@ import {
 } from "@/components/ui/select";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { insertContactRequestSchema, type InsertContactRequest } from "@shared/schema";
+import {
+  insertContactRequestSchema,
+  type InsertContactRequest,
+} from "@shared/schema";
 import { useCreateContactRequest } from "@/hooks/use-contact";
 import { Loader2 } from "lucide-react";
 
@@ -29,12 +32,13 @@ interface ContactModalProps {
 
 export function ContactModal({ open, onOpenChange }: ContactModalProps) {
   const { mutate, isPending } = useCreateContactRequest();
-  
+
   const form = useForm<InsertContactRequest>({
     resolver: zodResolver(insertContactRequestSchema),
     defaultValues: {
       name: "",
       email: "",
+      phone: "",
       message: "",
       type: "Player",
     },
@@ -53,14 +57,22 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[425px] bg-secondary border-border">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold text-white">Let's Work Together</DialogTitle>
+          <DialogTitle className="text-2xl font-bold text-[#1E90FF] dark:text-[#1E90FF]">
+            Let's Work Together
+          </DialogTitle>
           <DialogDescription className="text-muted-foreground">
-            Tell us about your goals. We'll get back to you with a strategy to showcase your talent.
+            Tell us about your goals. We'll get back to you with a strategy to
+            showcase your talent.
           </DialogDescription>
         </DialogHeader>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="grid gap-4 py-4">
+        <form
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="grid gap-4 py-4"
+        >
           <div className="grid gap-2">
-            <Label htmlFor="name" className="text-white">Full Name</Label>
+            <Label htmlFor="name" className="text-[#1d2d3d] dark:text-white">
+              Full Name
+            </Label>
             <Input
               id="name"
               {...form.register("name")}
@@ -68,12 +80,16 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
               className="bg-background border-input text-white focus:border-blue-500 transition-colors"
             />
             {form.formState.errors.name && (
-              <p className="text-sm text-destructive">{form.formState.errors.name.message}</p>
+              <p className="text-sm text-destructive">
+                {form.formState.errors.name.message}
+              </p>
             )}
           </div>
-          
+
           <div className="grid gap-2">
-            <Label htmlFor="email" className="text-white">Email</Label>
+            <Label htmlFor="email" className="text-[#1d2d3d] dark:text-white">
+              Email
+            </Label>
             <Input
               id="email"
               type="email"
@@ -81,43 +97,60 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
               placeholder="k.mbappe@example.com"
               className="bg-background border-input text-white focus:border-blue-500 transition-colors"
             />
-             {form.formState.errors.email && (
-              <p className="text-sm text-destructive">{form.formState.errors.email.message}</p>
+            {form.formState.errors.email && (
+              <p className="text-sm text-destructive">
+                {form.formState.errors.email.message}
+              </p>
             )}
           </div>
 
           <div className="grid gap-2">
-            <Label htmlFor="type" className="text-white">I am a...</Label>
-            <Select 
-              onValueChange={(val) => form.setValue("type", val)} 
+            <Label htmlFor="type" className="text-[#1d2d3d] dark:text-white">
+              I am a...
+            </Label>
+            <Select
+              onValueChange={(val) => form.setValue("type", val)}
               defaultValue="Player"
             >
-              <SelectTrigger className="bg-background border-input text-white focus:ring-blue-500">
+              <SelectTrigger className="bg-background border-input text-[#1d2d3d] dark:text-white focus:ring-blue-500">
                 <SelectValue placeholder="Select type" />
               </SelectTrigger>
-              <SelectContent className="bg-secondary border-border text-white">
+              <SelectContent className="bg-secondary border-border text-[#1d2d3d] dark:text-white">
                 <SelectItem value="Player">Player</SelectItem>
                 <SelectItem value="Agent">Agent</SelectItem>
                 <SelectItem value="Academy/Scout">Academy / Scout</SelectItem>
               </SelectContent>
             </Select>
           </div>
-
+          <Label htmlFor="phone" className="text-[#1d2d3d] dark:text-white">
+            Phone
+          </Label>
+          <Input
+            id="phone"
+            type="tel"
+            {...form.register("phone")}
+            placeholder="0123456789"
+            className="bg-background border-input text-white focus:border-blue-500 transition-colors"
+          />
           <div className="grid gap-2">
-            <Label htmlFor="message" className="text-white">Message</Label>
+            <Label htmlFor="message" className="text-[#1d2d3d] dark:text-white">
+              Message
+            </Label>
             <Textarea
               id="message"
               {...form.register("message")}
               placeholder="I have match footage from last season and need a highlight reel for scouts..."
-              className="bg-background border-input text-white min-h-[100px] focus:border-blue-500 transition-colors"
+              className="bg-background border-input text-[#1d2d3d] dark:text-white min-h-[100px] focus:border-blue-500 transition-colors"
             />
-             {form.formState.errors.message && (
-              <p className="text-sm text-destructive">{form.formState.errors.message.message}</p>
+            {form.formState.errors.message && (
+              <p className="text-sm text-destructive">
+                {form.formState.errors.message.message}
+              </p>
             )}
           </div>
 
-          <Button 
-            type="submit" 
+          <Button
+            type="submit"
             disabled={isPending}
             className="w-full mt-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold h-11"
           >

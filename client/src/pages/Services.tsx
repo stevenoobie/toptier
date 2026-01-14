@@ -4,17 +4,17 @@ import { Section, SectionHeader } from "@/components/Section";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
-import { 
-  History, 
-  Calendar, 
-  Zap, 
-  Search, 
-  Target, 
-  Dribbble, 
-  Shield, 
-  Activity, 
-  Brain, 
-  Users 
+import {
+  History,
+  Calendar,
+  Zap,
+  Search,
+  Target,
+  Dribbble,
+  Shield,
+  Activity,
+  Brain,
+  Users,
 } from "lucide-react";
 import { useState } from "react";
 import { ContactModal } from "@/components/ContactModal";
@@ -27,7 +27,8 @@ import dribblingImage from "@assets/dribbling_1767036284840.jpg";
 import defensiveImage from "@assets/def_1767036314815.jpg";
 import physicalImage from "@assets/body_strength_1767036334997.jpg";
 import leadershipImage from "@assets/leadership-keane_1767036353011.webp";
-import seasonImage from "@assets/season_performance2_1767058765274.jpg";
+import seasonImage from "@assets/man_united.jpeg";
+import gameIntellegenceImage from "@assets/game_intellegence.jpeg";
 
 export default function Services() {
   const [contactOpen, setContactOpen] = useState(false);
@@ -42,8 +43,8 @@ export default function Services() {
         "Large volume of clips showing long-term performance",
         "Role-based actions across various tactical systems",
         "Progression and consistency over time",
-        "Suitable for club presentations and scouting review"
-      ]
+        "Suitable for club presentations and scouting review",
+      ],
     },
     {
       title: "Season Performance",
@@ -52,9 +53,9 @@ export default function Services() {
       features: [
         "Actions selected based on the player’s position",
         "Attacking, defensive, and build-up situations",
-        "Performances from multiple matches across the season"
-      ]
-    }
+        "Performances from multiple matches across the season",
+      ],
+    },
   ];
 
   const attributeServices = [
@@ -62,38 +63,68 @@ export default function Services() {
       title: "Speed & Pace Showcase",
       icon: Zap,
       desc: "Highlight explosive acceleration, sprint speed, and rapid transitions. Perfect for wingers and forwards who rely on pace.",
-      features: ["Sprint highlights", "Acceleration bursts", "Recovery runs", "Transition speed"]
+      features: [
+        "Sprint highlights",
+        "Acceleration bursts",
+        "Recovery runs",
+        "Transition speed",
+      ],
     },
     {
       title: "Passing & Vision",
       icon: Search,
       desc: "Demonstrate precise passing, through balls, and creative playmaking. Ideal for midfielders and playmakers.",
-      features: ["Key passes", "Through balls", "Long-range distribution", "Assist compilations"]
+      features: [
+        "Key passes",
+        "Through balls",
+        "Long-range distribution",
+        "Assist compilations",
+      ],
     },
     {
       title: "Finishing & Goals",
       icon: Target,
       desc: "Showcase clinical finishing, shot power, and goal-scoring ability. Essential for strikers and attacking players.",
-      features: ["Goal compilations", "Shot accuracy", "Headers", "Weak foot finishes"]
+      features: [
+        "Goal compilations",
+        "Shot accuracy",
+        "Headers",
+        "Weak foot finishes",
+      ],
     },
     {
       title: "Dribbling & Skills",
       icon: Dribbble,
       desc: "Display technical ability, ball control, and 1v1 situations. Great for creative attacking players.",
-      features: ["Skill moves", "Close control", "Take-ons", "Ball manipulation"]
+      features: [
+        "Skill moves",
+        "Close control",
+        "Take-ons",
+        "Ball manipulation",
+      ],
     },
     {
       title: "Defensive Prowess",
       icon: Shield,
       desc: "Emphasize tackling, interceptions, and defensive positioning. Perfect for defenders and defensive midfielders.",
-      features: ["Tackles", "Interceptions", "Clearances", "Defensive positioning"]
+      features: [
+        "Tackles",
+        "Interceptions",
+        "Clearances",
+        "Defensive positioning",
+      ],
     },
     {
       title: "Physical & Strength",
       icon: Activity,
       desc: "Highlight physical dominance, aerial ability, and strength in duels. Ideal for target men and physical players.",
-      features: ["Aerial duels", "Physical battles", "Hold-up play", "Strength displays"]
-    }
+      features: [
+        "Aerial duels",
+        "Physical battles",
+        "Hold-up play",
+        "Strength displays",
+      ],
+    },
   ];
 
   const tacticalServices = [
@@ -101,14 +132,24 @@ export default function Services() {
       title: "Game Intelligence",
       icon: Brain,
       desc: "Showcase tactical awareness, positioning, and decision-making. Perfect for all positions.",
-      features: ["Positioning", "Decision-making", "Tactical awareness", "Off-ball movement"]
+      features: [
+        "Positioning",
+        "Decision-making",
+        "Tactical awareness",
+        "Off-ball movement",
+      ],
     },
     {
       title: "Leadership & Character",
       icon: Users,
       desc: "Demonstrate leadership qualities, communication, and team impact. Great for captains and experienced players.",
-      features: ["Communication", "Team organization", "Motivation", "Game management"]
-    }
+      features: [
+        "Communication",
+        "Team organization",
+        "Motivation",
+        "Game management",
+      ],
+    },
   ];
 
   return (
@@ -119,21 +160,23 @@ export default function Services() {
       {/* HERO */}
       <section className="pt-32 pb-20 px-4 text-center">
         <div className="max-w-4xl mx-auto space-y-6">
-          <Badge variant="outline" className="px-4 py-1 border-blue-500/30 text-blue-400 bg-blue-500/5">
-            OUR SERVICES
-          </Badge>
-          <h1 className="text-4xl md:text-6xl font-bold text-[#1d2d3d] dark:text-foreground tracking-tight">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-blue-500/10 text-[#1E90FF] text-sm font-semibold tracking-wide capitalize border border-[#1E90FF]/20 mb-6">
+            Our services
+          </span>
+          <h1 className="text-6xl md:text-6xl font-bold text-[#1E90FF] dark:text-[#1E90FF] tracking-tight">
             Specialized Highlight Videos for Every Attribute
           </h1>
           <p className="text-xl text-foreground dark:text-muted-foreground">
-            We create tailored highlight reels that showcase your specific strengths, whether you're a speedster, playmaker, finisher, or defensive anchor.
+            We create tailored highlight videos that showcase your specific
+            strengths, whether you're a speedster, playmaker, finisher, or
+            defensive anchor.
           </p>
         </div>
       </section>
 
       {/* MAIN CATEGORIES */}
-      <Section className="py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <Section className="py-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
           {mainCategories.map((cat, i) => (
             <motion.div
               key={i}
@@ -142,27 +185,40 @@ export default function Services() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
             >
-              <Card className="p-8 bg-blue-600/10 border-blue-500/20 h-full hover:border-blue-500/40 transition-all overflow-hidden flex flex-col group">
-                <div className="relative h-64 md:h-80 w-full overflow-hidden mb-6 -mx-8 -mt-8">
-                  <img 
-                    src={cat.title === "Career Performance Archive" ? careerImage : seasonImage} 
-                    alt={cat.title} 
+              <Card className=" bg-blue-600/10 border-blue-500/20 h-full hover:border-blue-500/40 transition-all overflow-hidden flex flex-col group w-10/12">
+                <div className="relative h-64 md:h-80 w-full overflow-hidden mb-6 object-contain">
+                  <img
+                    src={
+                      cat.title === "Career Performance Archive"
+                        ? careerImage
+                        : seasonImage
+                    }
+                    alt={cat.title}
                     className="w-full h-full object-contain object-top transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
-                <div className="h-14 w-14 bg-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-900/40">
-                  <cat.icon className="h-7 w-7 text-white" />
+                <div className="p-8 pt-0">
+                  <div className="h-14 w-14 bg-[#1E90FF] rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-900/40">
+                    <cat.icon className="h-7 w-7 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-[#1E90FF] dark:text-foreground mb-4">
+                    {cat.title}
+                  </h3>
+                  <p className="text-[#020617] dark:text-muted-foreground mb-6 leading-relaxed">
+                    {cat.desc}
+                  </p>
+                  <ul className="space-y-3">
+                    {cat.features.map((f, j) => (
+                      <li
+                        key={j}
+                        className="flex items-start gap-3 text-sm text-[#020617] dark:text-muted-foreground"
+                      >
+                        <div className="h-1.5 w-1.5 rounded-full bg-blue-500 mt-1.5 shrink-0" />
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <h3 className="text-2xl font-bold text-[#1d2d3d] dark:text-foreground mb-4">{cat.title}</h3>
-                <p className="text-[#020617] dark:text-muted-foreground mb-6 leading-relaxed">{cat.desc}</p>
-                <ul className="space-y-3">
-                  {cat.features.map((f, j) => (
-                    <li key={j} className="flex items-start gap-3 text-sm text-[#020617] dark:text-muted-foreground">
-                      <div className="h-1.5 w-1.5 rounded-full bg-blue-500 mt-1.5 shrink-0" />
-                      {f}
-                    </li>
-                  ))}
-                </ul>
               </Card>
             </motion.div>
           ))}
@@ -181,30 +237,42 @@ export default function Services() {
               transition={{ delay: i * 0.05 }}
             >
               <Card className="group h-full bg-secondary/30 border-white/5 hover:border-blue-500/30 transition-all overflow-hidden flex flex-col">
-                <div className="relative h-64 md:h-80 w-full overflow-hidden mb-6 bg-black/20">
+                <div className="relative h-40 md:h-80 w-full overflow-hidden mb-6 bg-black/20">
                   {(() => {
                     let imgSrc = paceImage;
-                    if (service.title === "Passing & Vision") imgSrc = passingImage;
-                    else if (service.title === "Finishing & Goals") imgSrc = finishingImage;
-                    else if (service.title === "Dribbling & Skills") imgSrc = dribblingImage;
-                    else if (service.title === "Defensive Prowess") imgSrc = defensiveImage;
-                    else if (service.title === "Physical & Strength") imgSrc = physicalImage;
+                    if (service.title === "Passing & Vision")
+                      imgSrc = passingImage;
+                    else if (service.title === "Finishing & Goals")
+                      imgSrc = finishingImage;
+                    else if (service.title === "Dribbling & Skills")
+                      imgSrc = dribblingImage;
+                    else if (service.title === "Defensive Prowess")
+                      imgSrc = defensiveImage;
+                    else if (service.title === "Physical & Strength")
+                      imgSrc = physicalImage;
 
                     return (
-                      <img 
-                        src={imgSrc} 
-                        alt={service.title} 
-                        className="w-full h-full object-contain object-center transition-transform duration-500 group-hover:scale-105"
+                      <img
+                        src={imgSrc}
+                        alt={service.title}
+                        className="w-full h-full object-contain object-top transition-transform duration-500 group-hover:scale-110 bg-[#edf2f7] dark:bg-black"
                       />
                     );
                   })()}
                 </div>
                 <div className="px-8 pb-8">
-                  <h3 className="text-xl font-bold text-[#1d2d3d] dark:text-foreground mb-3">{service.title}</h3>
-                  <p className="text-sm text-[#020617] dark:text-muted-foreground mb-6 leading-relaxed">{service.desc}</p>
+                  <h3 className="text-xl font-bold text-[#1E90FF] dark:text-foreground mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-sm text-[#020617] font-semibold dark:text-muted-foreground mb-6 leading-relaxed">
+                    {service.desc}
+                  </p>
                   <ul className="space-y-2">
                     {service.features.map((f, j) => (
-                      <li key={j} className="flex items-center gap-2 text-xs text-[#020617] dark:text-muted-foreground">
+                      <li
+                        key={j}
+                        className="flex items-center gap-2 font-semibold text-xs text-[#020617] dark:text-muted-foreground"
+                      >
                         <div className="h-1 w-1 rounded-full bg-blue-500/50" />
                         {f}
                       </li>
@@ -229,22 +297,34 @@ export default function Services() {
             >
               <Card className="p-8 bg-blue-600/10 border-blue-500/20 h-full flex flex-col hover:border-blue-500/40 transition-all overflow-hidden group">
                 <div className="relative h-64 md:h-80 w-full overflow-hidden mb-6 -mx-8 -mt-8 bg-black/20">
-                  <img 
-                    src={service.title === "Leadership & Character" ? leadershipImage : "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&q=80"} 
-                    alt={service.title} 
+                  <img
+                    src={
+                      service.title === "Leadership & Character"
+                        ? leadershipImage
+                        : gameIntellegenceImage
+                    }
+                    alt={service.title}
                     className="w-full h-full object-contain object-center transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="flex items-start gap-6">
-                  <div className="shrink-0 h-16 w-16 bg-blue-600 rounded-2xl flex items-center justify-center shadow-xl shadow-blue-900/20">
+                  <div className="shrink-0 h-16 w-16 bg-[#1E90FF] rounded-2xl flex items-center justify-center shadow-xl shadow-blue-900/20">
                     <service.icon className="h-8 w-8 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-[#1d2d3d] dark:text-foreground mb-3">{service.title}</h3>
-                    <p className="text-[#020617] dark:text-muted-foreground mb-4 leading-relaxed">{service.desc}</p>
+                    <h3 className="text-2xl font-bold text-[#1E90FF] dark:text-foreground mb-3">
+                      {service.title}
+                    </h3>
+                    <p className="text-[#020617] dark:text-muted-foreground mb-4 leading-relaxed">
+                      {service.desc}
+                    </p>
                     <div className="flex flex-wrap gap-2">
                       {service.features.map((f, j) => (
-                        <Badge key={j} variant="secondary" className="bg-white/5 border-white/10 text-[#020617] dark:text-gray-400">
+                        <Badge
+                          key={j}
+                          variant="secondary"
+                          className="bg-white/5 border-white/10 text-[#020617] dark:text-gray-400"
+                        >
                           {f}
                         </Badge>
                       ))}

@@ -12,35 +12,60 @@ export default function About() {
       <Navbar onContactClick={() => setContactOpen(true)} />
       <ContactModal open={contactOpen} onOpenChange={setContactOpen} />
 
-      <section className="pt-32 pb-20 px-4">
+      <section className="pt-32 pb-10 px-4">
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <span className="inline-block px-4 py-1 rounded-full bg-blue-500/10 text-blue-400 text-sm font-semibold border border-blue-500/20">
             ABOUT US
           </span>
-          <h1 className="text-4xl md:text-6xl font-bold text-[#1d2d3d] dark:text-foreground tracking-tight">
+          <h1 className="text-4xl md:text-6xl font-bold text-[#1E90FF] dark:text-[#1E90FF] tracking-tight">
             TopTier Media Agency
           </h1>
         </div>
       </section>
 
       <Section>
-        <div className="max-w-4xl mx-auto prose prose-invert prose-lg">
+        <div className="max-w-4xl mx-auto prose prose-invert prose-lg text-[#1d2d3d] dark:text-muted-foreground">
           <p>
-            TopTier is a professional media agency specializing in premium player highlight films and athlete profiles. We combine football editorial expertise with cinematic production values to craft videos that communicate a player’s strengths quickly and credibly. Each film is designed to be understood by scouts and sporting directors immediately.
+            TopTier is a professional media agency specializing in premium
+            player highlight films and athlete profiles. We combine football
+            editorial expertise with cinematic production values to craft videos
+            that communicate a player’s strengths quickly and credibly. Each
+            film is designed to be understood by scouts and sporting directors
+            immediately.
           </p>
           <p>
-            Our team includes top notch editors, and senior video producers who know what clubs look for and how to present it. We consult on footage selection, structure, and narrative — then deliver a finished product optimized for clubs, scouting platforms, agent presentations, and media outreach. We operate with discretion, speed, and a strict quality standard.
+            Our team includes top notch editors, and senior video producers who
+            know what clubs look for and how to present it. We consult on
+            footage selection, structure, and narrative — then deliver a
+            finished product optimized for clubs, scouting platforms, agent
+            presentations, and media outreach. We operate with discretion,
+            speed, and a strict quality standard.
           </p>
           <p>
-            TopTier produces bespoke player highlight films that translate performance into refined visual narratives. We work with agents, club recruitment teams, and professional players to present a player’s profile with editorial clarity, tactical context, and cinematic polish. Our work is not casual highlight reels — it’s curated representation designed to influence perception, support negotiations, and position talent for the next level.
+            TopTier produces bespoke player highlight films that translate
+            performance into refined visual narratives. We work with agents,
+            club recruitment teams, and professional players to present a
+            player’s profile with editorial clarity, tactical context, and
+            cinematic polish. Our work is not casual highlight reels — it’s
+            curated representation designed to influence perception, support
+            negotiations, and position talent for the next level.
           </p>
           <div className="bg-secondary/30 p-8 rounded-xl border border-white/5 my-12">
-            <h3 className="text-2xl font-bold text-[#1d2d3d] dark:text-foreground mb-4 mt-0">We deliver:</h3>
+            <h3 className="text-2xl font-bold text-[#1E90FF] dark:text-[#1E90FF] mb-4 mt-0">
+              We deliver:
+            </h3>
             <ul className="list-disc pl-6 space-y-2 text-[#020617] dark:text-muted-foreground">
               <li>Editorial accuracy that respects scouting standards.</li>
-              <li>Professional craftsmanship that elevates the player’s image.</li>
-              <li>Discretion and professionalism in all client interactions.</li>
-              <li>Market-focused outputs tailored to scouts, sporting directors, and PR teams.</li>
+              <li>
+                Professional craftsmanship that elevates the player’s image.
+              </li>
+              <li>
+                Discretion and professionalism in all client interactions.
+              </li>
+              <li>
+                Market-focused outputs tailored to scouts, sporting directors,
+                and PR teams.
+              </li>
             </ul>
           </div>
         </div>

@@ -7,11 +7,14 @@ export const contactRequests = pgTable("contact_requests", {
   name: text("name").notNull(),
   email: text("email").notNull(),
   type: text("type").notNull(), // Player, Agent, Academy/Scout
+  phone: text("phone"),
   message: text("message").notNull(),
   createdAt: timestamp("created_at").defaultNow(),
 });
 
-export const insertContactRequestSchema = createInsertSchema(contactRequests).omit({
+export const insertContactRequestSchema = createInsertSchema(
+  contactRequests
+).omit({
   id: true,
   createdAt: true,
 });

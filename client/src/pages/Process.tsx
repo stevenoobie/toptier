@@ -43,11 +43,13 @@ export default function Process() {
           <span className="inline-block px-4 py-1 rounded-full bg-blue-500/10 text-blue-400 text-sm font-semibold border border-blue-500/20">
             THE PROCESS
           </span>
-          <h1 className="text-4xl md:text-6xl font-bold text-[#1d2d3d] dark:text-foreground tracking-tight">
-            From Consultation to Career-Ready Highlight Reel
+          <h1 className="text-4xl md:text-6xl font-bold text-[#1E90FF] dark:text-[#1E90FF] tracking-tight">
+            From Consultation to Career-Ready Highlight Video
           </h1>
           <p className="text-xl text-foreground dark:text-muted-foreground">
-            Our streamlined 4-step process ensures you receive a professional highlight reel that showcases your strengths and meets recruitment standards.
+            Our streamlined 4-step process ensures you receive a professional
+            highlight video that showcases your strengths and meets recruitment
+            standards.
           </p>
         </div>
       </section>
@@ -63,19 +65,23 @@ export default function Process() {
               transition={{ delay: i * 0.1 }}
             >
               <Card className="p-8 bg-secondary/30 border-white/5 h-full">
-                <div className="h-12 w-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold mb-6">
+                <div className="h-12 w-12 bg-[#1E90FF] rounded-full flex items-center justify-center text-white font-bold mb-6">
                   {i + 1}
                 </div>
-                <h3 className="text-2xl font-bold text-[#1d2d3d] dark:text-foreground mb-4">{step.title}</h3>
-                <p className="text-[#020617] dark:text-muted-foreground leading-relaxed">{step.desc}</p>
+                <h3 className="text-2xl font-bold text-[#1E90FF] dark:text-foreground mb-4">
+                  {step.title}
+                </h3>
+                <p className="text-[#020617] dark:text-muted-foreground leading-relaxed">
+                  {step.desc}
+                </p>
               </Card>
             </motion.div>
           ))}
         </div>
       </Section>
 
-      <SectionHeader 
-        title="Why Our Process Delivers Results" 
+      <SectionHeader
+        title="Why Our Process Delivers Results"
         subtitle="We've refined our workflow to deliver professional-quality highlight reels that meet the exacting standards of scouts."
         centered
       />

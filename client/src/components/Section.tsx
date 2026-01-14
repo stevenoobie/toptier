@@ -9,9 +9,14 @@ interface SectionProps {
   dark?: boolean;
 }
 
-export function Section({ id, className, children, dark = false }: SectionProps) {
+export function Section({
+  id,
+  className,
+  children,
+  dark = false,
+}: SectionProps) {
   return (
-    <section 
+    <section
       id={id}
       className={cn(
         "py-20 md:py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden",
@@ -33,10 +38,18 @@ export function Section({ id, className, children, dark = false }: SectionProps)
   );
 }
 
-export function SectionHeader({ title, subtitle, centered = false }: { title: string; subtitle?: string; centered?: boolean }) {
+export function SectionHeader({
+  title,
+  subtitle,
+  centered = false,
+}: {
+  title: string;
+  subtitle?: string;
+  centered?: boolean;
+}) {
   return (
     <div className={cn("mb-12 md:mb-20", centered && "text-center")}>
-      <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-tight text-[#3b82f6] dark:text-foreground uppercase">
+      <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-tight text-[#3b82f6] dark:text-foreground capitalize">
         {title}
       </h2>
       {subtitle && (
@@ -44,10 +57,12 @@ export function SectionHeader({ title, subtitle, centered = false }: { title: st
           {subtitle}
         </p>
       )}
-      <div className={cn(
-        "h-1 w-20 bg-blue-600 rounded-full mt-6",
-        centered && "mx-auto"
-      )} />
+      <div
+        className={cn(
+          "h-1 w-20 bg-blue-600 rounded-full mt-6",
+          centered && "mx-auto"
+        )}
+      />
     </div>
   );
 }

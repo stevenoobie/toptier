@@ -31,21 +31,21 @@ export function Navbar({ onContactClick }: { onContactClick: () => void }) {
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300 border-b",
         scrolled
-          ? "bg-background/80 backdrop-blur-md border-border py-3"
-          : "bg-transparent border-transparent py-5"
+          ? "bg-background/80 backdrop-blur-md border-border py-3 text-black"
+          : "bg-transparent border-transparent py-5 text-black"
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         {/* Logo and Branding */}
         <Link href="/" className="flex items-center gap-1 group">
           <div className="relative h-12 w-16 overflow-hidden rounded-md transition-transform group-hover:scale-105">
-            <img 
-              src={logoPng} 
-              alt="TopTier Logo" 
+            <img
+              src={logoPng}
+              alt="TopTier Logo"
               className="h-full w-full object-contain"
             />
           </div>
-          <span className="text-lg font-bold tracking-tight text-primary transition-colors">
+          <span className="text-lg font-bold tracking-tight transition-colors text-[#1E90FF]">
             TopTier
           </span>
         </Link>
@@ -58,9 +58,19 @@ export function Navbar({ onContactClick }: { onContactClick: () => void }) {
               href={link.href}
               className={cn(
                 "text-lg font-bold tracking-tight transition-colors hover:text-[#1E90FF]",
-                location === link.href ? "text-[#1E90FF]" : "text-white/90 hover:text-white"
+                location === link.href
+                  ? "text-[#1E90FF]"
+                  : "text-[#1E90FF] hover:text-[#4390dd]"
               )}
-              style={{ fontFamily: '"Neue Haas Grotesk Display Pro", "Inter", sans-serif' }}
+              style={{
+                fontFamily:
+                  '"Neue Haas Grotesk Display Pro", "Inter", sans-serif',
+              }}
+              onClick={() => {
+                setTimeout(() => {
+                  window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+                }, 0);
+              }}
             >
               {link.name}
             </Link>
@@ -69,12 +79,16 @@ export function Navbar({ onContactClick }: { onContactClick: () => void }) {
             variant="ghost"
             size="icon"
             onClick={toggleTheme}
-            className="text-muted-foreground hover:text-primary"
+            className="text-[#1E90FF] hover:text-primary"
             data-testid="button-theme-toggle"
           >
-            {theme === "light" ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
+            {theme === "light" ? (
+              <Moon className="h-5 w-5" />
+            ) : (
+              <Sun className="h-5 w-5" />
+            )}
           </Button>
-          <Button 
+          <Button
             onClick={onContactClick}
             className="shadow-lg shadow-primary/20"
           >
@@ -90,7 +104,11 @@ export function Navbar({ onContactClick }: { onContactClick: () => void }) {
             onClick={toggleTheme}
             className="text-muted-foreground hover:text-primary"
           >
-            {theme === "light" ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
+            {theme === "light" ? (
+              <Moon className="h-5 w-5" />
+            ) : (
+              <Sun className="h-5 w-5" />
+            )}
           </Button>
           <button
             className="text-foreground"
@@ -110,14 +128,21 @@ export function Navbar({ onContactClick }: { onContactClick: () => void }) {
               href={link.href}
               className={cn(
                 "text-lg font-medium hover:text-primary",
-                location === link.href ? "text-primary" : "text-muted-foreground"
+                location === link.href
+                  ? "text-primary"
+                  : "text-muted-foreground"
               )}
-              onClick={() => setIsOpen(false)}
+              onClick={() => {
+                setTimeout(() => {
+                  window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+                }, 0);
+                setIsOpen(false);
+              }}
             >
               {link.name}
             </Link>
           ))}
-          <Button 
+          <Button
             onClick={() => {
               setIsOpen(false);
               onContactClick();

@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
 /* Fallback to standard Grotesk-style fonts if Neue Haas is not locally available */
 @font-face {
-  font-family: 'Neue Haas Grotesk Display Pro';
-  src: local('Neue Haas Grotesk Display Pro'), local('Helvetica Neue'), local('Arial');
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: local("Neue Haas Grotesk Display Pro"), local("Helvetica Neue"),
+    local("Arial");
 }
 
 @tailwind base;
@@ -12,56 +13,56 @@
 
 :root {
   /* Light Theme Palette based on provided image */
-  --background: 210 40% 96.1%;    /* Very Light Blue #f1f5f9 */
-  --foreground: 224 71.4% 4.1%;   /* Dark Navy Blue #020617 */
-  
-  --primary: 221.2 83.2% 53.3%;   /* Bright Blue #3b82f6 */
+  --background: 210 40% 96.1%; /* Very Light Blue #f1f5f9 */
+  --foreground: 224 71.4% 4.1%; /* Dark Navy Blue #020617 */
+
+  --primary: 221.2 83.2% 53.3%; /* Bright Blue #3b82f6 */
   --primary-foreground: 210 40% 98%;
-  
-  --secondary: 210 40% 90%;       /* Soft Blue-Gray #e2e8f0 */
+
+  --secondary: 210 40% 90%; /* Soft Blue-Gray #e2e8f0 */
   --secondary-foreground: 224 71.4% 4.1%;
-  
+
   --muted: 210 40% 90%;
   --muted-foreground: 224 71.4% 4.1%;
-  
+
   --accent: 210 40% 90%;
   --accent-foreground: 224 71.4% 4.1%;
-  
+
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 210 40% 98%;
 
   --border: 214.3 31.8% 91.4%;
   --input: 214.3 31.8% 91.4%;
   --ring: 221.2 83.2% 53.3%;
-  
+
   --radius: 0.5rem;
 
   /* Custom Navy Colors */
-  --light-navy: 217 33% 17%;    /* Light Navy #1d2d3d */
-  --dark-navy: 224 71% 4%;     /* Dark Navy Blue #020617 */
+  --light-navy: 217 33% 17%; /* Light Navy #1d2d3d */
+  --dark-navy: 224 71% 4%; /* Dark Navy Blue #020617 */
 }
 
 .dark {
   /* Dark Theme Palette - Deepened shades for more contrast */
-  --background: 221 100% 3%;      /* #00050f - Deepened from 7% */
+  --background: 221 100% 3%; /* #00050f - Deepened from 7% */
   --foreground: 210 40% 98%;
-  
-  --primary: 217 91% 60%;         /* Vibrant blue accent */
+
+  --primary: 217 91% 60%; /* Vibrant blue accent */
   --primary-foreground: 210 40% 98%;
-  
-  --secondary: 221 100% 6%;      /* Deepened from 12% */
+
+  --secondary: 221 100% 6%; /* Deepened from 12% */
   --secondary-foreground: 210 40% 98%;
-  
-  --muted: 221 100% 8%;          /* Deepened from 15% */
+
+  --muted: 221 100% 8%; /* Deepened from 15% */
   --muted-foreground: 215 20% 65%;
-  
+
   --accent: 217 91% 60%;
   --accent-foreground: 210 40% 98%;
-  
+
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 210 40% 98%;
 
-  --border: 221 100% 10%;        /* Deepened from 15% */
+  --border: 221 100% 10%; /* Deepened from 15% */
   --input: 221 100% 10%;
   --ring: 217 91% 60%;
 }
@@ -72,16 +73,22 @@
   }
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
   }
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-sans font-bold tracking-tight text-[#1d2d3d] dark:text-foreground;
   }
 }
 
 @layer utilities {
   @keyframes gradient-x {
-    0%, 100% {
+    0%,
+    100% {
       background-size: 200% 200%;
       background-position: left center;
     }
@@ -124,4 +131,11 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-muted-foreground;
+}
+
+@media (min-width: 768px) {
+  .md\:py-32 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
 }

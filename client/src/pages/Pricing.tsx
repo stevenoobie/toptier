@@ -70,11 +70,12 @@ export default function Pricing() {
           <span className="inline-block px-4 py-1 rounded-full bg-blue-500/10 text-blue-400 text-sm font-semibold border border-blue-500/20">
             PRICING
           </span>
-          <h1 className="text-4xl md:text-6xl font-bold text-[#1d2d3d] dark:text-foreground tracking-tight">
+          <h1 className="text-4xl md:text-6xl font-bold text-[#1E90FF] dark:text-[#1E90FF] tracking-tight">
             Professional Packages for Every Player
           </h1>
           <p className="text-xl text-foreground dark:text-muted-foreground">
-            Transparent pricing with no hidden fees. Choose the package that fits your needs and budget.
+            Transparent pricing with no hidden fees. Choose the package that
+            fits your needs and budget.
           </p>
         </div>
       </section>
@@ -82,7 +83,7 @@ export default function Pricing() {
       <Section>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {tiers.map((tier) => (
-            <Card 
+            <Card
               key={tier.name}
               className={`p-8 bg-secondary/30 border-white/5 flex flex-col h-full relative ${
                 tier.popular ? "border-blue-500/50 ring-1 ring-blue-500/50" : ""
@@ -94,36 +95,57 @@ export default function Pricing() {
                 </div>
               )}
               <div className="mb-8">
-                <h3 className="text-2xl font-bold text-[#1d2d3d] dark:text-foreground mb-2">{tier.name}</h3>
-                <div className="text-4xl font-bold text-blue-500 mb-4">{tier.price}</div>
-                <p className="text-sm text-[#020617] dark:text-muted-foreground">{tier.description}</p>
+                <h3 className="text-2xl font-bold text-[#1d2d3d] dark:text-foreground mb-2">
+                  {tier.name}
+                </h3>
+                <div className="text-4xl font-bold text-blue-500 mb-4">
+                  {tier.price}
+                </div>
+                <p className="text-sm text-[#020617] dark:text-muted-foreground">
+                  {tier.description}
+                </p>
               </div>
               <ul className="space-y-4 mb-8 flex-1">
                 {tier.features.map((feature) => (
-                  <li key={feature} className="flex items-start gap-3 text-sm text-[#020617] dark:text-muted-foreground">
+                  <li
+                    key={feature}
+                    className="flex items-start gap-3 text-sm text-[#1d2d3d] dark:text-muted-foreground"
+                  >
                     <Check className="h-4 w-4 text-blue-500 mt-0.5" />
                     {feature}
                   </li>
                 ))}
               </ul>
-              <Button 
-                className={`w-full ${tier.popular ? "bg-blue-600 hover:bg-blue-700" : "variant-outline"}`}
+              <Button
+                className={`w-full ${
+                  tier.popular
+                    ? "bg-[#1E90FF] hover:bg-blue-700"
+                    : "variant-outline"
+                }`}
                 onClick={() => setContactOpen(true)}
               >
-                {tier.name === "Elite" ? "Choose Elite →" : tier.name === "Pro" ? "Choose Pro" : "Get Started"}
+                {tier.name === "Elite"
+                  ? "Choose Elite"
+                  : tier.name === "Pro"
+                  ? "Choose Pro"
+                  : "Get Started"}
               </Button>
             </Card>
           ))}
         </div>
       </Section>
 
-      <SectionHeader 
-        title="Ready to Showcase Your Greatness?" 
+      <SectionHeader
+        title="Ready to Showcase Your Greatness?"
         subtitle="Contact us today to discuss your project and get started on your professional highlight reel."
         centered
       />
       <div className="flex justify-center pb-20">
-        <Button size="lg" className="bg-blue-600" onClick={() => setContactOpen(true)}>
+        <Button
+          size="lg"
+          className="bg-[#1E90FF]"
+          onClick={() => setContactOpen(true)}
+        >
           Contact Us
         </Button>
       </div>
