@@ -1,5 +1,9 @@
-import { z } from 'zod';
-import { insertContactRequestSchema, contactRequests, portfolioItems } from './schema';
+import { z } from "zod";
+import {
+  insertContactRequestSchema,
+  contactRequests,
+  portfolioItems,
+} from "./schema";
 
 export const errorSchemas = {
   validation: z.object({
@@ -17,8 +21,8 @@ export const errorSchemas = {
 export const api = {
   contact: {
     create: {
-      method: 'POST' as const,
-      path: '/api/contact',
+      method: "POST" as const,
+      path: "/api/contact",
       input: insertContactRequestSchema,
       responses: {
         201: z.custom<typeof contactRequests.$inferSelect>(),
@@ -28,8 +32,8 @@ export const api = {
   },
   portfolio: {
     list: {
-      method: 'GET' as const,
-      path: '/api/portfolio',
+      method: "GET" as const,
+      path: "/api/portfolio",
       responses: {
         200: z.array(z.custom<typeof portfolioItems.$inferSelect>()),
       },
@@ -37,7 +41,10 @@ export const api = {
   },
 };
 
-export function buildUrl(path: string, params?: Record<string, string | number>): string {
+export function buildUrl(
+  path: string,
+  params?: Record<string, string | number>
+): string {
   let url = path;
   if (params) {
     Object.entries(params).forEach(([key, value]) => {
